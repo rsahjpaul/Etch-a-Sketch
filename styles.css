@@ -14,19 +14,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   border: red 2px solid;
-  max-width: 352px ;
-  max-height: 352px ;
+  width: 960px ;
+  height: 960px ;
   margin-bottom: 50px;
 }
 
 .pixels {
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
   background-color: white;
   border: 1px solid black;
 }
 
 .hovered {
-  background-color: blue;
+  background-color: #ff6f61;
 }

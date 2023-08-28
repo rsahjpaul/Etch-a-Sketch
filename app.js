@@ -1,15 +1,18 @@
 const grid = document.getElementById("grid");
+const pixelCountButton = document.getElementById("pixelCount");
+const resetButton = document.getElementById("reset");
 
 
-const pixelCount = document.getElementById('pixelCount')
-
-pixelCount.addEventListener('click', () => {
-  console.log('hi')
+pixelCountButton.addEventListener("click", () => {
+  console.log("hi");
+  let count = prompt("How many squares per side? Max is 16");
+  console.log(count);
+  createGrid(count)
 });
 
 
-const startApp = () => {
-  for (let i = 0; i < 256; i++) {
+const createGrid = (count) => {
+  for (let i = 0; i < (count*count); i++) {
     let div = document.createElement("div");
     div.classList.add("pixels");
     grid.appendChild(div);
@@ -23,7 +26,6 @@ const startApp = () => {
       });
     });
 
-    const resetButton = document.getElementById("reset");
     resetButton.addEventListener("click", () => {
       pixels.forEach((element) => {
         element.classList.remove("hovered");
@@ -32,4 +34,4 @@ const startApp = () => {
   }
 };
 
-startApp();
+createGrid();
