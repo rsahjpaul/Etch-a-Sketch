@@ -1,0 +1,32 @@
+body {
+  background-color: #0A2647;
+}
+
+.container {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  border: red 2px solid;
+  max-width: 352px ;
+  max-height: 352px ;
+  margin-bottom: 50px;
+}
+
+.pixels {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.hovered {
+  background-color: blue;
+}
